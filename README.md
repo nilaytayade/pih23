@@ -1,4 +1,3 @@
-Certainly! Here is the entire content in a single Markdown document:
 
 ```markdown
 # API Test Cases
