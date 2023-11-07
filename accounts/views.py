@@ -7,6 +7,7 @@ from django.contrib.auth import authenticate
 from django.core.exceptions import ObjectDoesNotExist
 from .models import CustomUser
 from .serializers import UserSerializer
+from django.shortcuts import render
 from .decode import morse_encode,morse_decode,swap_case,snake_case,camel_case,caesar_cipher_encode,caesar_cipher_decode,vigenere_cipher_decode,vigenere_cipher_encode,base64_decode,base64_encode
 
 @api_view(['POST'])
@@ -114,9 +115,11 @@ def base64(request):
     key=request.data.get('key')
 
     if request.data.get('type')=='encode':
-        return Response({"base64 encoded":base64_encode(string,key)},status=status.HTTP_200_OK)
+        return Response({"base64 encoded":base64_encode(string)},status=status.HTTP_200_OK)
 
     else:
-        return Response({"base64 decoded":base64_decode(string,key)},status=status.HTTP_200_OK)
+        return Response({"base64 decoded":base64_decode(string)},status=status.HTTP_200_OK)
     
 
+def home (request):
+    return render(request,'home.html')

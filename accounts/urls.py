@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import register_user, user_login, user_logout,morse,inverse,case_switch,ceaser_cipher,vigenere_cipher,base64
+from .views import register_user, user_login, user_logout,morse,inverse,case_switch,ceaser_cipher,vigenere_cipher,base64,home
 
 urlpatterns = [
     path('register/', register_user, name='register'),
@@ -11,6 +11,7 @@ urlpatterns = [
     path('ceaser/', ceaser_cipher),
     path('vigenere/', vigenere_cipher),
     path('base64/', base64),
+    path('home/', home),
 
 
 ]

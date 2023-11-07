@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-2p((ck@kv^xer7#0dwx#@h33nm7_-l-w6x%fh05(0zzl^u%wsf
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -57,7 +57,7 @@ ROOT_URLCONF = 'pih23.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS':  ['pih23/templates',],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
