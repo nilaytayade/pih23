@@ -20,14 +20,14 @@
 ```json
 {
   "username": "exampleUsername",
-  "password": "examplePass"
+  "password": "example@Pass1"
 }
 ```
 OR
 ```json
 {
   "username": "example@pisb.com",
-  "password": "examplePass"
+  "password": "example@Pass1"
 }
 ```
 
