@@ -1,5 +1,8 @@
 
 import base64
+import re
+
+
 morse_code_dict = {
     'A': '.-', 'B': '-...', 'C': '-.-.', 'D': '-..', 'E': '.', 'F': '..-.', 'G': '--.', 'H': '....',
     'I': '..', 'J': '.---', 'K': '-.-', 'L': '.-..', 'M': '--', 'N': '-.', 'O': '---', 'P': '.--.',
@@ -154,3 +157,13 @@ def base64_encode(input_string):
     encoded_bytes = base64.b64encode(input_string.encode('utf-8'))
     encoded_string = encoded_bytes.decode('utf-8')
     return encoded_string
+
+
+
+
+def valid_password(password):
+    pattern = r'^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[!@#$%^&*+\-=_])(.{8,})$'
+    if re.match(pattern, password):
+        return False
+    else:
+        return True

@@ -8,11 +8,15 @@ from django.core.exceptions import ObjectDoesNotExist
 from .models import CustomUser
 from .serializers import UserSerializer
 from django.shortcuts import render
-from .decode import morse_encode,morse_decode,swap_case,snake_case,camel_case,caesar_cipher_encode,caesar_cipher_decode,vigenere_cipher_decode,vigenere_cipher_encode,base64_decode,base64_encode
+from .decode import morse_encode,morse_decode,swap_case,snake_case,camel_case,caesar_cipher_encode,caesar_cipher_decode,vigenere_cipher_decode,vigenere_cipher_encode,base64_decode,base64_encode,valid_password
+
+
 
 @api_view(['POST'])
 def register_user(request):
     if request.method == 'POST':
+        if valid_password(request.data.get('password')):
+            return Response({"Not a valid password"},status=status.HTTP_400_BAD_REQUEST)
         serializer = UserSerializer(data=request.data)
         if serializer.is_valid():
             serializer.save()
