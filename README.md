@@ -9,7 +9,7 @@
 {
   "email": "example@pisb.com",
   "username": "exampleUsername",
-  "password": "examplePass"
+  "password": "example@Pass1"
 }
 ```
 
