@@ -3,8 +3,7 @@ API Test Cases
 ```markdown
 
 
-## Register:
-** [http://127.0.0.1:8000/api/register/](http://127.0.0.1:8000/api/register/)**
+## Register: [http://127.0.0.1:8000/api/register/](http://127.0.0.1:8000/api/register/)
 
 **Request:**
 ```json
