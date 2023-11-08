@@ -1,11 +1,10 @@
-#
-API Test Cases
-```markdown
+
+## API Test Cases:
 
 
-## Register: [http://127.0.0.1:8000/api/register/]
+## Register: [http://127.0.0.1:8000/api/register/](http://127.0.0.1:8000/api/register/)
 
-**Request:**
+**Request:POST**
 ```json
 {
   "email": "example@pisb.com",
@@ -16,7 +15,7 @@ API Test Cases
 
 ## Login: [http://127.0.0.1:8000/api/login/](http://127.0.0.1:8000/api/login/)
 
-**Request:**
+**Request:POST**
 ```json
 {
   "username": "exampleUsername",
@@ -33,7 +32,7 @@ OR
 
 ## Logout: [http://127.0.0.1:8000/api/logout/](http://127.0.0.1:8000/api/logout/)
 
-**Request:**
+**Request:POST**
 ```javascript
 fetch('/path/to/user_logout/', {
   method: 'POST',
@@ -46,7 +45,7 @@ fetch('/path/to/user_logout/', {
 
 ## Morse: [http://127.0.0.1:8000/api/morse/](http://127.0.0.1:8000/api/morse/)
 
-**Request (Encode):**
+**Request (Encode):POST**
 ```json
 {
   "string": "HELLO WORLD",
@@ -54,7 +53,7 @@ fetch('/path/to/user_logout/', {
 }
 ```
 
-**Request (Decode):**
+**Request (Decode):POST**
 ```json
 {
   "string": ".... . .-.. .-.. ---   .-- --- .-. .-.. -..",
@@ -64,7 +63,7 @@ fetch('/path/to/user_logout/', {
 
 ## Inverse: [http://127.0.0.1:8000/api/inverse/](http://127.0.0.1:8000/api/inverse/)
 
-**Request (Swap Case):**
+**Request (Swap Case):POST**
 ```json
 {
   "string": "Hello World"
@@ -73,7 +72,7 @@ fetch('/path/to/user_logout/', {
 
 ## Case Switch: [http://127.0.0.1:8000/api/case_switch/](http://127.0.0.1:8000/api/case_switch/)
 
-**Request (Camel Case):**
+**Request (Camel Case):POST**
 ```json
 {
   "string": "hello_world",
@@ -81,7 +80,7 @@ fetch('/path/to/user_logout/', {
 }
 ```
 
-**Request (Snake Case):**
+**Request (Snake Case):POST**
 ```json
 {
   "string": "helloWorld",
@@ -91,7 +90,7 @@ fetch('/path/to/user_logout/', {
 
 ## Caesar Cipher: [http://127.0.0.1:8000/api/ceaser/](http://127.0.0.1:8000/api/ceaser/)
 
-**Request (Encode):**
+**Request (Encode):POST**
 ```json
 {
   "string": "HELLO",
@@ -100,7 +99,7 @@ fetch('/path/to/user_logout/', {
 }
 ```
 
-**Request (Decode):**
+**Request (Decode):POST**
 ```json
 {
   "string": "KHOOR",
@@ -111,7 +110,7 @@ fetch('/path/to/user_logout/', {
 
 ## Vigenere Cipher: [http://127.0.0.1:8000/api/vigenere/](http://127.0.0.1:8000/api/vigenere/)
 
-**Request (Encode):**
+**Request (Encode):POST**
 ```json
 {
   "string": "HELLO",
@@ -120,7 +119,7 @@ fetch('/path/to/user_logout/', {
 }
 ```
 
-**Request (Decode):**
+**Request (Decode):POST**
 ```json
 {
   "string": "RIJVS",
@@ -131,7 +130,7 @@ fetch('/path/to/user_logout/', {
 
 ## Base64: [http://127.0.0.1:8000/api/base64/](http://127.0.0.1:8000/api/base64/)
 
-**Request (Encode):**
+**Request (Encode):POST**
 ```json
 {
   "string": "Hello World",
@@ -139,7 +138,7 @@ fetch('/path/to/user_logout/', {
 }
 ```
 
-**Request (Decode):**
+**Request (Decode):POST**
 ```json
 {
   "string": "SGVsbG8gV29ybGQ=",
