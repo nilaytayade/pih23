@@ -1,4 +1,5 @@
-
+![django_logo](https://res.cloudinary.com/dzhpx2alw/image/upload/v1699461167/django-logo-positive_exxstd.png)
+![restframework_logo](https://res.cloudinary.com/dzhpx2alw/image/upload/v1699461357/logo_cz6qrm.png)
 ## API Test Cases:
 
 
@@ -19,14 +20,14 @@
 ```json
 {
   "username": "exampleUsername",
-  "password": "examplePass"
+  "password": "example@Pass1"
 }
 ```
 OR
 ```json
 {
   "username": "example@pisb.com",
-  "password": "examplePass"
+  "password": "example@Pass1"
 }
 ```
 
