@@ -1,0 +1,141 @@
+.desktop {
+  background-color: #0b0427;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.desktop .overlap-group-wrapper {
+  background-color: #0b0427;
+  height: 1024px;
+  width: 1440px;
+}
+
+.desktop .overlap-group {
+  height: 1024px;
+  position: relative;
+}
+
+.desktop .rectangle {
+  background-color: #d9d9d9;
+  border-radius: 20px;
+  height: 76px;
+  left: 172px;
+  position: absolute;
+  top: 47px;
+  width: 1226px;
+}
+
+.desktop .ellipse {
+  background-color: #d9d9d9;
+  border-radius: 48px/38px;
+  height: 76px;
+  left: 48px;
+  position: absolute;
+  top: 47px;
+  width: 96px;
+}
+
+.desktop .eva-cube-outline {
+  height: 50px;
+  left: 71px;
+  position: absolute;
+  top: 60px;
+  width: 50px;
+}
+
+.desktop .text-wrapper {
+  color: #0b0427;
+  font-family: "Outfit", Helvetica;
+  font-size: 40px;
+  font-weight: 800;
+  left: 202px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 59px;
+}
+
+.desktop .bg {
+  height: 1024px;
+  left: 0;
+  mix-blend-mode: color;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 1440px;
+}
+
+.desktop .iconamoon-profile {
+  height: 50px;
+  left: 1322px;
+  position: absolute;
+  top: 60px;
+  width: 50px;
+  /* Additional Styles for the icon button */
+  cursor: pointer; /* Change cursor on hover to indicate it's clickable */
+}
+
+.desktop .pngimg {
+  height: 700px;
+  left: 262px;
+  object-fit: cover;
+  position: absolute;
+  top: 170px;
+  width: 900px;
+}
+
+.desktop .group {
+  height: 76px !important;
+  left: 48px !important;
+  position: absolute !important;
+  top: 47px !important;
+  width: 96px !important;
+}
+
+.desktop .frame {
+  align-items: center;
+  border: 5px solid;
+  border-color: #ffffff1a;
+  border-radius: 50px;
+  display: inline-flex;
+  gap: 10px;
+  justify-content: center;
+  left: 582px;
+  padding: 10px;
+  position: absolute;
+  top: 890px;
+  /* Additional Styles for the frame */
+  /* background-color: #fff; Example background color */
+}
+
+.desktop .frame button {
+  /* Add your button styles here */
+  background-color: rgb(6, 30, 55); /* Example background color */
+  color: #fff; /* Example text color */
+  border: none;
+  border-radius: 50px;
+  /* border-radius: 5px; */
+  /* padding: 10px; */
+  padding: 10px 20px;
+  font-size: 35px;
+  cursor: pointer;
+  font-style: oblique;
+}
+
+.desktop .frame button:hover {
+  background-color: #5d35ee; /* Example hover color */
+}
+
+
+.desktop .div {
+  color: #cedce5;
+  font-family: "Outfit", Helvetica;
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  width: fit-content;
+}

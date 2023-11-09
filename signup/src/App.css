@@ -1,0 +1,292 @@
+.index {
+  background-color: #0b0427;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.index .overlap-group-wrapper {
+  background-color: #0b0427;
+  height: 1024px;
+  width: 1440px;
+}
+
+.index .overlap-group {
+  height: 1024px;
+  position: relative;
+}
+
+.index .ph-key-fill {
+  height: 256px;
+  left: 592px;
+  position: absolute;
+  top: 384px;
+  width: 256px;
+}
+
+.index .rectangle {
+  background-color: #d9d9d9;
+  border-radius: 20px;
+  height: 76px;
+  left: 172px;
+  position: absolute;
+  top: 47px;
+  width: 1226px;
+}
+
+.index .ellipse {
+  background-color: #d9d9d9;
+  border-radius: 48px/38px;
+  height: 76px;
+  left: 48px;
+  position: absolute;
+  top: 47px;
+  width: 96px;
+}
+
+.index .eva-cube-outline {
+  height: 50px;
+  left: 71px;
+  position: absolute;
+  top: 60px;
+  width: 50px;
+}
+
+.index .div {
+  color: #0b0427;
+  font-family: "Outfit", Helvetica;
+  font-size: 40px;
+  font-weight: 800;
+  left: 202px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 59px;
+}
+
+.index .bg {
+  height: 1024px;
+  left: 0;
+  mix-blend-mode: color;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 1440px;
+}
+
+.index .iconamoon-profile {
+  height: 50px;
+  left: 1322px;
+  position: absolute;
+  top: 60px;
+  width: 50px;
+  z-index: 999; /* Or adjust as needed */
+}
+
+.index .group {
+  height: 76px !important;
+  left: 48px !important;
+  position: absolute !important;
+  top: 47px !important;
+  width: 96px !important;
+}
+
+.index .img {
+  height: 682px;
+  left: 363px;
+  position: absolute;
+  top: 243px;
+  width: 702px;
+}
+
+.index .rectangle-2 {
+  background-color: #010e16;
+  border-radius: 60px;
+  height: 79px;
+  left: 475px;
+  position: absolute;
+  top: 425px;
+  width: 473px;
+}
+
+.index .rectangle-3 {
+  background-color: #010e16;
+  border-radius: 60px;
+  height: 79px;
+  left: 475px;
+  position: absolute;
+  top: 321px;
+  width: 473px;
+}
+
+.index .text-wrapper-2 {
+  color: #736d6d;
+  font-family: "Outfit", Helvetica;
+  font-size: 40px;
+  font-weight: 400;
+  left: 561px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 337px;
+}
+
+.index .text-wrapper-3 {
+  color: #736d6d;
+  font-family: "Outfit", Helvetica;
+  font-size: 40px;
+  font-weight: 400;
+  left: 561px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 437px;
+}
+
+.index .rectangle-4 {
+  background-color: #010e16;
+  border-radius: 60px;
+  height: 81px;
+  left: 475px;
+  position: absolute;
+  top: 533px;
+  width: 473px;
+}
+
+.index .rectangle-5 {
+  background-color: #010e16;
+  border-radius: 60px;
+  height: 81px;
+  left: 475px;
+  position: absolute;
+  top: 639px;
+  width: 473px;
+}
+
+.index .iconamoon-profile-2 {
+  height: 44px;
+  left: 870px;
+  position: absolute;
+  top: 341px;
+  width: 44px;
+}
+
+.index .vector {
+  height: 40px;
+  left: 870px;
+  position: absolute;
+  top: 554px;
+  width: 40px;
+}
+
+.index .LOGIN-instance {
+  left: 571px !important;
+  position: absolute !important;
+  top: 808px !important;
+}
+
+.index .design-component-instance-node {
+  left: 34px !important;
+  text-align: center !important;
+}
+
+.index .ic-outline-email {
+  height: 41px;
+  left: 870px;
+  position: absolute;
+  top: 444px;
+  width: 48px;
+}
+
+.index .vector-2 {
+  height: 8px;
+  left: 883px;
+  position: absolute;
+  top: 677px;
+  width: 5px;
+}
+
+.index .vector-3 {
+  height: 14px;
+  left: 880px;
+  position: absolute;
+  top: 673px;
+  width: 11px;
+}
+
+.index .vector-4 {
+  height: 19px;
+  left: 883px;
+  position: absolute;
+  top: 671px;
+  width: 12px;
+}
+
+.index .vector-5 {
+  height: 27px;
+  left: 876px;
+  position: absolute;
+  top: 671px;
+  width: 22px;
+}
+
+.index .vector-6 {
+  height: 23px;
+  left: 872px;
+  position: absolute;
+  top: 668px;
+  width: 25px;
+}
+
+.index .vector-7 {
+  height: 14px;
+  left: 869px;
+  position: absolute;
+  top: 662px;
+  width: 32px;
+}
+
+.index .text-wrapper-4 {
+  color: #736d6d;
+  font-family: "Outfit", Helvetica;
+  font-size: 40px;
+  font-weight: 400;
+  left: 558px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 652px;
+}
+
+.index .frame {
+  align-items: center;
+  border: 17px solid;
+  border-color: rgb(6, 6, 89); /* Dark bluish color */
+  border-radius: 45px;
+  display: inline-flex;
+  gap: 20px;
+  justify-content: center;
+  left: 560px;
+  padding: 20px;
+  position: absolute;
+  top: 760px;
+  width: 220px;
+  height: 30px;
+  /* Additional Styles for the frame */
+  background-color: rgb(8, 8, 43);
+}
+
+
+
+.index .password {
+  color: #736d6d;
+  font-family: "Outfit", Helvetica;
+  font-size: 40px;
+  font-weight: 400;
+  left: 558px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 548px;
+}

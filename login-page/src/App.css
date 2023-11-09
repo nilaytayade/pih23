@@ -1,0 +1,142 @@
+.index {
+  background-color: #0b0427;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.index .overlap-group-wrapper {
+  background-color: #0b0427;
+  height: 1024px;
+  width: 1440px;
+}
+
+.index .overlap-group {
+  height: 1024px;
+  position: relative;
+}
+
+.index .ph-key-fill {
+  height: 256px;
+  left: 592px;
+  position: absolute;
+  top: 384px;
+  width: 256px;
+}
+
+.index .rectangle {
+  background-color: #d9d9d9;
+  border-radius: 20px;
+  height: 76px;
+  left: 172px;
+  position: absolute;
+  top: 47px;
+  width: 1226px;
+}
+
+.index .ellipse {
+  background-color: #d9d9d9;
+  border-radius: 48px/38px;
+  height: 76px;
+  left: 48px;
+  position: absolute;
+  top: 47px;
+  width: 96px;
+}
+
+.index .eva-cube-outline {
+  height: 50px;
+  left: 71px;
+  position: absolute;
+  top: 60px;
+  width: 50px;
+}
+
+.index .div {
+  color: #0b0427;
+  font-family: "Outfit", Helvetica;
+  font-size: 40px;
+  font-weight: 800;
+  left: 202px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 59px;
+}
+
+.index .bg {
+  height: 1024px;
+  left: 0;
+  mix-blend-mode: color;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 1440px;
+}
+
+.index .iconamoon-profile {
+  height: 50px;
+  left: 1322px;
+  position: absolute;
+  top: 60px;
+  width: 50px;
+}
+
+.index .group {
+  height: 76px !important;
+  left: 48px !important;
+  position: absolute !important;
+  top: 47px !important;
+  width: 96px !important;
+}
+
+.index .img {
+  height: 393px;
+  left: 370px;
+  position: absolute;
+  top: 382px;
+  width: 701px;
+}
+
+.index .rectangle-2 {
+  background-color: #010e16;
+  border-radius: 60px;
+  height: 79px;
+  left: 490px;
+  position: absolute;
+  top: 425px;
+  width: 444px;
+}
+
+.index .rectangle-3 {
+  background-color: #010e16;
+  border-radius: 60px;
+  height: 81px;
+  left: 490px;
+  position: absolute;
+  top: 538px;
+  width: 444px;
+}
+
+.index .iconamoon-profile-2 {
+  height: 44px;
+  left: 870px;
+  position: absolute;
+  top: 442px;
+  width: 44px;
+}
+
+.index .vector {
+  height: 44px;
+  left: 870px;
+  position: absolute;
+  top: 552px;
+  width: 44px;
+}
+
+.index .LOGIN-instance {
+  left: 586px !important;
+  position: absolute !important;
+  top: 658px !important;
+}

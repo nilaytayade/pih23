@@ -1,0 +1,11 @@
+.drop-down-menu {
+    align-items: center;
+    background-color: #d1dbe4;
+    border-radius: 60px;
+    display: flex;
+    gap: 185px;
+    /* overflow: hidden; */
+    padding: 12px 38px;
+    position: relative;
+    width: 671px;
+  } 

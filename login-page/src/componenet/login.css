@@ -1,0 +1,34 @@
+.LOGIN {
+    border-radius: 60px;
+    height: 73px;
+    position: relative;
+    width: 268px;
+  }
+  
+  .LOGIN .text-wrapper {
+    font-family: "Outfit", Helvetica;
+    font-size: 40px;
+    font-weight: 800;
+    left: 67px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 11px;
+  }
+  
+  .LOGIN.default {
+    background-color: #010e16;
+  }
+  
+  .LOGIN.variant-2 {
+    background-color: #d1dbe4;
+  }
+  
+  .LOGIN.default .text-wrapper {
+    color: #ffffff;
+  }
+  
+  .LOGIN.variant-2 .text-wrapper {
+    color: #010e16;
+  }
+  
