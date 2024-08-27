@@ -3,188 +3,233 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>API Test Cases</title>
+    <title>Morse API Endpoint</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
+            background-color: #1e1e1e;
+            color: #c7c7c7;
+            margin: 0;
+            padding: 0;
         }
-
-        .section {
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #5eb1ff;
+            margin-bottom: 40px;
+        }
+        .created-by {
+            text-align: center;
+             color: #5eb1ff;
+           
+        }
+        .endpoint {
+            background-color: #2b2b2b;
+            padding: 20px;
+            border-radius: 10px;
             margin-bottom: 20px;
         }
-
-        .test-case {
-            margin-left: 20px;
-            margin-bottom: 10px;
+        .endpoint h2 {
+            margin-top: 0;
+            color: #ff9f43;
+        }
+        .endpoint p {
+            margin: 10px 0;
+        }
+        .endpoint label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .endpoint textarea {
+            width: 100%;
+            height: 100px;
+            background-color: #1e1e1e;
+            color: #c7c7c7;
+            border: 1px solid #444;
+            border-radius: 5px;
+            padding: 10px;
+            font-family: 'Courier New', monospace;
+        }
+        .endpoint button {
+            background-color: #5eb1ff;
+            color: #1e1e1e;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .endpoint button:hover {
+            background-color: #4a91d9;
+        }
+        .response {
+            background-color: #3a3a3a;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .response pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
         }
 
-        .success {
-            color: green;
-        }
-
-        .error {
-            color: red;
+ .con{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+                  }
+        img {
+            max-width: 100%; /* Optional: Ensure image fits within container */
+            height: 300px; /* Maintain aspect ratio */
         }
     </style>
 </head>
 <body>
-    <div class="section">
-        <h2>Register: http://127.0.0.1:8000/api/register/</h2>
-    <p>{"email":"example@pisb.com","username":"exampleUsername","password":"examplePass"}
-      
-      </p>
-       
-        <!-- Add test cases for Morse API here -->
-    </div>
-    <div class="section">
-        <h2>Login: http://127.0.0.1:8000/api/login/</h2>
-    <p>{"username":"exampleUsername","password":"examplePass"} <br>
-        OR <br>
-        {"username":"example@pisb.com","password":"examplePass"}
-      
-      </p>
-       
-        <!-- Add test cases for Morse API here -->
-    </div>
-    <div class="section">
-        <h2>Logout: http://127.0.0.1:8000/api/logout/</h2>
-    <p>
-        fetch('/path/to/user_logout/', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-              'Authorization': `Token ${authToken}`
-            }
-      </p>
-       
-        <!-- Add test cases for Morse API here -->
-    </div>
     
+        <h1>CRYPT Api Playground💻</h1>
 
-    <!-- Other API Views Sections -->
-    <!-- Morse API -->
-    <div class="section">
-        <h2>Morse: http://127.0.0.1:8000/api/morse/</h2>
-    <p>Request (Encode) <br>
-        {
-        "string": "HELLO WORLD",
-        "type": "encode"
-      } <br> <br>
-
-      Request (Decode)
-<br>
-      {
-        "string": ".... . .-.. .-.. ---   .-- --- .-. .-.. -..",
-        "type": "decode"
-      }
-      
-      </p>
-       
-        <!-- Add test cases for Morse API here -->
+ <div class="con">
+        <img src="https://res.cloudinary.com/dzhpx2alw/image/upload/v1724774381/Screenshot_2024-08-27_212829_srgtvl.png" alt="Descriptive text">
     </div>
 
-    <!-- Inverse API -->
-    <div class="section">
-        <h2>Inverse: http://127.0.0.1:8000/api/inverse/</h2>
-       <p>Request (Swap Case)
-        <br>
-        {
-            "string": "Hello World"
-          }
-          
-       </p>
+<div class="container">
+        <div class="created-by">
 
-        <!-- Add test cases for Inverse API here -->
-    </div>
+            <p>Created by Nilay Tayade🚀👾 <a href="https://github.com/nilaytayade/pih23">Source code↗️</a>
+</p> 
+        </div>
 
-    <!-- Case Switch API -->
-    <div class="section">
-        <h2>Case Switch: http://127.0.0.1:8000/api/case_switch/</h2>
+        <div class="endpoint">
+            <h2>Morse API Endpoint</h2>
+            <p>Endpoint: <code>http://3.110.161.150:8000/api/morse/</code></p>
+            <label for="morse-request">Request (POST): "type" = "encode" or "decode"</label>
+            <textarea id="morse-request">{
+    "string": "HELLO WORLD",
+    "type": "encode"
+}</textarea>
+            <button onclick="makeRequest('morse')">Send Request</button>
+            <div class="response" id="morse-response">
+                <strong>Response:</strong>
+                <pre id="morse-result"></pre>
+            </div>
+        </div>
 
-        <p>
-            Request (Camel Case) <br>
-            {
-                "string": "hello_world",
-                "type": "camel case"
-              }
-              <br> <br>
+        <div class="endpoint">
+            <h2>Inverse API Endpoint</h2>
+            <p>Endpoint: <code>http://3.110.161.150:8000/api/inverse/</code></p>
+            <label for="inverse-request">Request (POST):</label>
+            <textarea id="inverse-request">{
+    "string": "Hello World"
+}</textarea>
+            <button onclick="makeRequest('inverse')">Send Request</button>
+            <div class="response" id="inverse-response">
+                <strong>Response:</strong>
+                <pre id="inverse-result"></pre>
+            </div>
+        </div>
 
-             Request (Snake Case) <br>
-             {
-                "string": "helloWorld",
-                "type": "snake case"
-              }
-               
-        </p>
-        <!-- Add test cases for Case Switch API here -->
-    </div>
+        <div class="endpoint">
+            <h2>Case Switch API Endpoint</h2>
+            <p>Endpoint: <code>http://3.110.161.150:8000/api/case_switch/</code></p>
+            <label for="case_switch-request">Request (POST): "type"= "camel case" or "snake case"</label>
+            <textarea id="case_switch-request">{
+    "string": "hello_world",
+    "type": "camel case"
+}</textarea>
+            <button onclick="makeRequest('case_switch')">Send Request</button>
+            <div class="response" id="case_switch-response">
+                <strong>Response:</strong>
+                <pre id="case_switch-result"></pre>
+            </div>
+        </div>
 
-    <!-- Caesar Cipher API -->
-    <div class="section">
-        <h2>Caesar Cipher: http://127.0.0.1:8000/api/ceaser/ </h2>
-
-        <p>
-Request (Encode) <br>
-{
+        <div class="endpoint">
+            <h2>Caesar Cipher API Endpoint</h2>
+            <p>Endpoint: <code>http://3.110.161.150:8000/api/ceaser/</code></p>
+            <label for="ceaser-request">Request (POST): "type" = "encode" or "decode" , "key"= int(number) :</label>
+            <textarea id="ceaser-request">{
     "string": "HELLO",
     "key": 3,
     "type": "encode"
-  }
-<br> <br>
-  Request (Decode) <br>
-  {
-    "string": "KHOOR",
-    "key": 3,
-    "type": "decode"
-  }
-  
+}</textarea>
+            <button onclick="makeRequest('ceaser')">Send Request</button>
+            <div class="response" id="ceaser-response">
+                <strong>Response:</strong>
+                <pre id="ceaser-result"></pre>
+            </div>
+        </div>
 
-        </p>
-        <!-- Add test cases for Caesar Cipher API here -->
+        <div class="endpoint">
+            <h2>Vigenere Cipher API Endpoint</h2>
+            <p>Endpoint: <code>http://3.110.161.150:8000/api/vigenere/</code></p>
+            <label for="vigenere-request">Request (POST): "type" = "encode" or "decode" , "key"= "any_string" :</label>
+            <textarea id="vigenere-request">{
+    "string": "HELLO",
+    "key": "KEY",
+    "type": "encode"
+}</textarea>
+            <button onclick="makeRequest('vigenere')">Send Request</button>
+            <div class="response" id="vigenere-response">
+                <strong>Response:</strong>
+                <pre id="vigenere-result"></pre>
+            </div>
+        </div>
+
+        <div class="endpoint">
+            <h2>Base64 API Endpoint</h2>
+            <p>Endpoint: <code>http://3.110.161.150:8000/api/base64/</code></p>
+            <label for="base64-request">Request (POST): "type" = "encode" or "decode":</label>
+            <textarea id="base64-request">{
+    "string": "Hello World",
+    "type": "encode"
+}</textarea>
+            <button onclick="makeRequest('base64')">Send Request</button>
+            <div class="response" id="base64-response">
+                <strong>Response:</strong>
+                <pre id="base64-result"></pre>
+            </div>
+        </div>
+
     </div>
 
-    <!-- Vigenere Cipher API -->
-    <div class="section">
-        <h2>Vigenere Cipher: http://127.0.0.1:8000/api/vigenere/</h2>
+    <script>
+        async function makeRequest(api) {
+            const requestText = document.getElementById(`${api}-request`).value;
+            const responseField = document.getElementById(`${api}-result`);
+            
+            // Clear previous response
+            responseField.textContent = '';
 
-        <p>
-            Request (Encode) <br>
-            {
-                "string": "HELLO",
-                "key": "KEY",
-                "type": "encode"
-              }
+            console.log(`Sending request to ${api} with payload:`, requestText);
+            
+            try {
+                const response = await fetch(`http://3.110.161.150:8000/api/${api}/`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: requestText
+                });
 
-              <br> <br>Request (Decode) <br>
-              {
-                "string": "RIJVS",
-                "key": "KEY",
-                "type": "decode"
-              }
-              
-        </p>
-        <!-- Add test cases for Vigenere Cipher API here -->
-    </div>
+                console.log(`Response status: ${response.status}`);
 
-    <!-- Base64 API -->
-    <div class="section">
-        <h2>Base64: http://127.0.0.1:8000/api/base64/ </h2>
-        <p>
-           Request (Encode) <br>
-           {
-            "string": "Hello World",
-            "type": "encode"
-          }
-<br> <br>
-        Request (Decode) <br>
-        {
-            "string": "SGVsbG8gV29ybGQ=",
-            "type": "decode"
-          }
-          
-        </p>
-        <!-- Add test cases for Base64 API here -->
-    </div>
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+
+                const data = await response.json();
+                responseField.textContent = JSON.stringify(data, null, 4);
+            } catch (error) {
+                console.error('Error:', error);
+                responseField.textContent = `Error: ${error.message}`;
+            }
+        }
+    </script>
 </body>
 </html>
