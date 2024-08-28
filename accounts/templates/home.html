@@ -120,34 +120,9 @@
             </div>
         </div>
 
-        <div class="endpoint">
-            <h2>Inverse API Endpoint</h2>
-            <p>Endpoint: <code>http://3.110.161.150:8000/api/inverse/</code></p>
-            <label for="inverse-request">Request (POST):</label>
-            <textarea id="inverse-request">{
-    "string": "Hello World"
-}</textarea>
-            <button onclick="makeRequest('inverse')">Send Request</button>
-            <div class="response" id="inverse-response">
-                <strong>Response:</strong>
-                <pre id="inverse-result"></pre>
-            </div>
-        </div>
+        
 
-        <div class="endpoint">
-            <h2>Case Switch API Endpoint</h2>
-            <p>Endpoint: <code>http://3.110.161.150:8000/api/case_switch/</code></p>
-            <label for="case_switch-request">Request (POST): "type"= "camel case" or "snake case"</label>
-            <textarea id="case_switch-request">{
-    "string": "hello_world",
-    "type": "camel case"
-}</textarea>
-            <button onclick="makeRequest('case_switch')">Send Request</button>
-            <div class="response" id="case_switch-response">
-                <strong>Response:</strong>
-                <pre id="case_switch-result"></pre>
-            </div>
-        </div>
+      
 
         <div class="endpoint">
             <h2>Caesar Cipher API Endpoint</h2>
@@ -193,6 +168,36 @@
             <div class="response" id="base64-response">
                 <strong>Response:</strong>
                 <pre id="base64-result"></pre>
+            </div>
+        </div>
+
+
+  <div class="endpoint">
+            <h2>Case Switch API Endpoint</h2>
+            <p>Endpoint: <code>http://3.110.161.150:8000/api/case_switch/</code></p>
+            <label for="case_switch-request">Request (POST): "type"= "camel case" or "snake case"</label>
+            <textarea id="case_switch-request">{
+    "string": "hello_world",
+    "type": "camel case"
+}</textarea>
+            <button onclick="makeRequest('case_switch')">Send Request</button>
+            <div class="response" id="case_switch-response">
+                <strong>Response:</strong>
+                <pre id="case_switch-result"></pre>
+            </div>
+        </div>
+
+<div class="endpoint">
+            <h2>Inverse API Endpoint</h2>
+            <p>Endpoint: <code>http://3.110.161.150:8000/api/inverse/</code></p>
+            <label for="inverse-request">Request (POST):</label>
+            <textarea id="inverse-request">{
+    "string": "Hello World"
+}</textarea>
+            <button onclick="makeRequest('inverse')">Send Request</button>
+            <div class="response" id="inverse-response">
+                <strong>Response:</strong>
+                <pre id="inverse-result"></pre>
             </div>
         </div>
 
